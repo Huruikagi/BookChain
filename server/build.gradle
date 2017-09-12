@@ -1,7 +1,7 @@
 buildscript {
 	ext {
-		kotlinVersion = '1.1.2-5'
-		springBootVersion = '2.0.0.BUILD-SNAPSHOT'
+		kotlinVersion = '1.1.4-3'
+		springBootVersion = '2.0.0.M3'
 	}
 	repositories {
 		mavenCentral()
@@ -41,5 +41,6 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter')
 	compile("org.jetbrains.kotlin:kotlin-stdlib-jre8:${kotlinVersion}")
 	compile("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
+	compile('org.hyperledger.fabric-sdk-java:fabric-sdk-java:1.0.1')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
